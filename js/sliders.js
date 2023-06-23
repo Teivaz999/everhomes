@@ -76,8 +76,8 @@ const swiper = new Swiper(projectDetailTop, {
 
 const swiper2 = new Swiper('.mySwiper2', {
 loop:true,
-initialSlide: 1,
 spaceBetween: 32, 
+loopAdditionalSlides: 1,
  /* slidesOffsetBefore: 32, */
  /* slidesOffsetAfter: 32, */
   navigation: {
@@ -90,8 +90,9 @@ spaceBetween: 32,
   },
   thumbs: {
     swiper: projectDetailTop,
-  },
+  }
 });
+
 
 const swiperProperty = document.querySelector('.swiperProperty');
 if(swiperProperty){
