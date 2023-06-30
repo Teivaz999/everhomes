@@ -162,6 +162,8 @@
 </symbol>
 <symbol id="closeElement" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25 1L1 25M1 1L25 25" stroke="white" stroke-width="2"/>
+<symbol id="closeElement-black" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 1L1 25M1 1L25 25" stroke="#29282E" stroke-width="2"/>
 </symbol>
 <symbol id="checkbox" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.90918 5.72791L5.90918 9.72791L13.9092 1.72791" stroke="#E6214C" stroke-width="2" stroke-linecap="round"/>
