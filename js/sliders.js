@@ -78,8 +78,6 @@ const swiper2 = new Swiper('.mySwiper2', {
 loop:true,
 spaceBetween: 32, 
 loopAdditionalSlides: 1,
- /* slidesOffsetBefore: 32, */
- /* slidesOffsetAfter: 32, */
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -92,6 +90,7 @@ loopAdditionalSlides: 1,
     swiper: projectDetailTop,
   }
 });
+
 
 
 const swiperProperty = document.querySelector('.swiperProperty');
