@@ -57,6 +57,7 @@ const swiper = new Swiper(projectDetailTop, {
   slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
+  loop:true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -69,15 +70,28 @@ const swiper = new Swiper(projectDetailTop, {
       slidesPerView: 5,
       spaceBetween: 33
     },
-    
   }
 });
+
+const swiper2NextButton = document.querySelector('.swiper-button-next-2');
+const swiper2PrevButton = document.querySelector('.swiper-button-prev-2');
+
+if (swiper2NextButton && swiper2PrevButton) {
+  swiper2NextButton.addEventListener('click', function () {
+    swiper.slideNext();
+    swiper2.slideNext();
+  });
+
+  swiper2PrevButton.addEventListener('click', function () {
+    swiper.slidePrev();
+    swiper2.slidePrev();
+  });
+}
 }
 
 const swiper2 = new Swiper('.mySwiper2', {
 loop:true,
 spaceBetween: 32, 
-loopAdditionalSlides: 1,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -321,6 +335,8 @@ spaceBetween: 16,
     }
   },
 });
+
+
 
 const insideBlog = document.querySelector('.blog-inside__slaider');
 if(insideBlog){
