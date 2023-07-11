@@ -263,6 +263,7 @@ const otherProjects = new Swiper('.other-projects', {
   }
 })
 
+
 const projectDetail = document.querySelector('.insideSwiper');
 if(projectDetail){
 const inside = new Swiper(projectDetail, {
@@ -291,8 +292,11 @@ const inside = new Swiper(projectDetail, {
 });
 }
 
+
+
 const inside2 = new Swiper('.insideSwiper2', {
   loop:true,
+  slidesPerView:"auto",
 initialSlide: 1,
 spaceBetween: 16, 
  /* slidesOffsetBefore: 32, */
