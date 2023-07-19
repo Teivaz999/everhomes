@@ -91,7 +91,9 @@ if (swiper2NextButton && swiper2PrevButton) {
 
 const swiper2 = new Swiper('.mySwiper2', {
 loop:true,
+slidesPerView: 1,
 spaceBetween: 32, 
+centeredSlides: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
