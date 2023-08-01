@@ -1471,53 +1471,55 @@
     </div>
 </section>
 
-<div class="modal-contact modal-contact-main modal" id="contactModal">
-    <div class="closeX">
-        <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="images/sprite.svg#closeElement"></use>
-        </svg>
-    </div>
-        <div class="container">
-            <div class="left-block">
-                <div class="name-wrap">
-                    <h2>Elena</h2>
-                <span>Your house hunter</span>
+<div class="modal-overlay"></div>
+    <div class="modal-contact modal-contact-main modal" id="contactModal">
+        <div class="closeX">
+            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/sprite.svg#closeElement"></use>
+            </svg>
+        </div>
+            <div class="container">
+                <div class="left-block">
+                    <div class="name-wrap">
+                        <h2>Elena</h2>
+                    <span>Your house hunter</span>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <h2>Any questions about 
+                        Sobha Hartland 2?</h2>
+                        <form class="from-submit" action="#">
+                            <ul class="select-connect">
+                                <li class="item active" data-attr="modal-phone">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="images/sprite.svg#phone-contact"></use>
+                                    </svg>
+                                    <span>phone</span></li>
+                                <li class="item" data-attr="modal-whatsapp">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="images/sprite.svg#whatsapp-contact"></use>
+                                    </svg>
+                                    <span>whatsapp</span></li>
+                                <li class="item" data-attr="modal-telegram">
+                                    <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="images/sprite.svg#telegram-contact"></use>
+                                    </svg>
+                                    <span>telegram</span></li>
+                            </ul>
+                            <div class="input-wrap">
+                                <input type="tel" id="phone" name="phone" required>
+                                <input type="hidden" id="hide-phone" name="hide-phone">
+                                <span id="valid-msg" class="hide">✓</span>
+                                <span id="error-msg" class="hide"></span>
+                                <input id="select-connect-input" type="text" name="modal-phone" placeholder="Name" required>
+                                <button>contact me</button>
+                            </div>
+                            
+                        </form>
                 </div>
             </div>
-            <div class="right-block">
-                <h2>Any questions about 
-                    Sobha Hartland 2?</h2>
-                    <form class="from-submit" action="#">
-                        <ul class="select-connect">
-                            <li class="item active" data-attr="modal-phone">
-                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="images/sprite.svg#phone-contact"></use>
-                                </svg>
-                                <span>phone</span></li>
-                            <li class="item" data-attr="modal-whatsapp">
-                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="images/sprite.svg#whatsapp-contact"></use>
-                                </svg>
-                                <span>whatsapp</span></li>
-                            <li class="item" data-attr="modal-telegram">
-                                <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="images/sprite.svg#telegram-contact"></use>
-                                </svg>
-                                <span>telegram</span></li>
-                        </ul>
-                        <div class="input-wrap">
-                            <input type="tel" id="phone" name="phone" required>
-                            <input type="hidden" id="hide-phone" name="hide-phone">
-                            <span id="valid-msg" class="hide">✓</span>
-                            <span id="error-msg" class="hide"></span>
-                            <input id="select-connect-input" type="text" name="modal-phone" placeholder="Name" required>
-                            <button>contact me</button>
-                        </div>
-                        
-                    </form>
-            </div>
-        </div>
-</div>
+    </div>
+
 
 
 <footer>
