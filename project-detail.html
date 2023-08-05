@@ -875,7 +875,7 @@
                 our commission
             </span>
         </div>
-        <button class="open-modal-btn" data-btn="modal-contact-main" data-modal="contactModal">contact me</button>
+        <button class="open-modal-btn" data-btn="modal-contact-main" data-modal="contactModalEmail">contact me</button>
     </div>
 </section>
 
@@ -998,7 +998,8 @@
                                         <span>telegram</span></li>
                                 </ul>
                                 <div class="input-wrap">
-                                    <input type="tel" id="phone" name="phone" required>
+                                    <input type="tel" id="phone" name="phone">
+                                    <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <input type="hidden" id="hide-phone" name="hide-phone">
                                     <span id="valid-msg" class="hide">✓</span>
                                     <span id="error-msg" class="hide"></span>
@@ -1033,12 +1034,7 @@
                             Sobha Hartland 2?</h2>
                             <form class="from-submit" action="#">
                                 <ul class="select-connect">
-                                    <li class="item active" data-attr="modal-email">
-                                        <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="images/sprite.svg#email-contact"></use>
-                                        </svg>
-                                        <span>email</span></li>
-                                    <li class="item" data-attr="modal-whatsapp">
+                                    <li class="item active" data-attr="modal-whatsapp">
                                         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                             <use xlink:href="images/sprite.svg#whatsapp-contact"></use>
                                         </svg>
@@ -1048,9 +1044,15 @@
                                             <use xlink:href="images/sprite.svg#telegram-contact"></use>
                                         </svg>
                                         <span>telegram</span></li>
+                                    <li class="item" data-attr="modal-email">
+                                        <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="images/sprite.svg#email-contact"></use>
+                                        </svg>
+                                        <span>email</span></li>
                                 </ul>
                                 <div class="input-wrap">
-                                    <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                    <input type="tel" id="phone" name="phone">
+                                    <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <input type="hidden" id="hide-phone" name="hide-phone">
                                     <span id="valid-msg" class="hide">✓</span>
                                     <span id="error-msg" class="hide"></span>
@@ -1545,7 +1547,7 @@
             </div>
     </div>
 
-<div class="modal-contact modal-contact-main modal" id="contactModal">
+<div class="modal-contact modal-contact-main modal" id="contactModalEmail">
         <div class="closeX">
             <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="images/sprite.svg#closeElement"></use>
@@ -1563,12 +1565,7 @@
                         Sobha Hartland 2?</h2>
                         <form class="from-submit" action="#">
                             <ul class="select-connect">
-                                <li class="item active" data-attr="modal-phone">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="images/sprite.svg#phone-contact"></use>
-                                    </svg>
-                                    <span>phone</span></li>
-                                <li class="item" data-attr="modal-whatsapp">
+                                <li class="item active" data-attr="modal-whatsapp">
                                     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                         <use xlink:href="images/sprite.svg#whatsapp-contact"></use>
                                     </svg>
@@ -1578,12 +1575,15 @@
                                         <use xlink:href="images/sprite.svg#telegram-contact"></use>
                                     </svg>
                                     <span>telegram</span></li>
+                                <li class="item" data-attr="modal-email">
+                                    <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="images/sprite.svg#email-contact"></use>
+                                    </svg>
+                                    <span>email</span></li>
                             </ul>
                             <div class="input-wrap">
                                 <input type="tel" id="phone" name="phone" required>
-                                <input type="hidden" id="hide-phone" name="hide-phone">
-                                <span id="valid-msg" class="hide">✓</span>
-                                <span id="error-msg" class="hide"></span>
+                                <input type="email" id="email" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                                 <input id="select-connect-input" type="text" name="modal-phone" placeholder="Name" required>
                                 <button>contact me</button>
                             </div>
