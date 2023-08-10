@@ -168,6 +168,27 @@ spaceBetween: 32,
   }
 });
 
+var swiper = new Swiper('.swiper-main', {
+  loop: true, // Чтобы можно было бесконечно перемещаться между слайдами
+  initialSlide: Math.floor(Math.random() * 3),
+  autoplay:{
+    delay:5000,
+  },
+  speed:1000,
+  effect: "fade",
+  });
+
+  /* swiper.on("slideChange", function () {
+    const randomSlideIndex = Math.floor(Math.random() * swiper.slides.length);
+    swiper.slideTo(randomSlideIndex); // Переключаемся на случайный слайд при каждой смене слайда
+  });
+  swiper.on("init", function () {
+    const randomSlideIndex = Math.floor(Math.random() * swiper.slides.length);
+    setTimeout(function () {
+      swiper.slideTo(randomSlideIndex);
+    }, 5000);
+  }); */
+
 
 const placeSlider = new Swiper('.place-slider', {
   loop:true,
