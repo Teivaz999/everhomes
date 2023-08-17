@@ -170,7 +170,7 @@ spaceBetween: 32,
 
 var swiper = new Swiper('.swiper-main', {
   loop: true, // Чтобы можно было бесконечно перемещаться между слайдами
-  initialSlide: Math.floor(Math.random() * 3),
+  initialSlide: Math.floor(Math.random() * 7),
   autoplay:{
     delay:5000,
   },
