@@ -202,6 +202,30 @@ const placeSlider = new Swiper('.place-slider', {
   },
 })
 
+function toggleNavigationArrows() {
+  var slidesCount = placeSlider.slides.length;
+  var nextArrow = document.querySelector('.place-button-next');
+  var prevArrow = document.querySelector('.place-button-prev');
+  
+  if (slidesCount <= 1) {
+    nextArrow.style.display = 'none';
+    prevArrow.style.display = 'none';
+  } else {
+    nextArrow.style.display = 'block';
+    prevArrow.style.display = 'block';
+  }
+}
+
+// Вызов функции при инициализации слайдера
+placeSlider.on('init', function() {
+  toggleNavigationArrows();
+});
+
+// Вызов функции при смене слайдов
+placeSlider.on('slideChange', function() {
+  toggleNavigationArrows();
+});
+
 const placeSlider2 = new Swiper('.place2-slider', {
   loop:true,
   navigation: {
