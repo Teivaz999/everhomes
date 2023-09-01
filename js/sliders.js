@@ -203,16 +203,19 @@ const placeSlider = new Swiper('.place-slider', {
 })
 
 function toggleNavigationArrows() {
-  var slidesCount = placeSlider.slides.length;
-  var nextArrow = document.querySelector('.place-button-next');
-  var prevArrow = document.querySelector('.place-button-prev');
-  
-  if (slidesCount <= 1) {
-    nextArrow.style.display = 'none';
-    prevArrow.style.display = 'none';
-  } else {
-    nextArrow.style.display = 'block';
-    prevArrow.style.display = 'block';
+  var sliders = document.querySelectorAll('.place-slider');
+  for (var i = 0; i < sliders.length; i++) {
+      var slidesCount = sliders[i].querySelectorAll('.place-slider-slide').length;
+      var nextArrow = sliders[i].querySelector('.place-button-next');
+      var prevArrow = sliders[i].querySelector('.place-button-prev');
+
+      if (slidesCount <= 1) {
+          nextArrow.style.display = 'none';
+          prevArrow.style.display = 'none';
+      } else {
+          nextArrow.style.display = 'block';
+          prevArrow.style.display = 'block';
+      }
   }
 }
 
