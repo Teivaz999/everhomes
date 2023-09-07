@@ -190,7 +190,7 @@ var swiper = new Swiper('.swiper-main', {
   }); */
 
 
-const placeSlider = new Swiper('.place-slider', {
+/* const placeSlider = new Swiper('.place-slider', {
   loop:true,
   navigation: {
     nextEl: '.place-button-next',
@@ -217,43 +217,42 @@ function toggleNavigationArrows() {
           prevArrow.style.display = 'block';
       }
   }
-}
+} */
 
-// Вызов функции при инициализации слайдера
-placeSlider.on('init', function() {
-  toggleNavigationArrows();
+const placeSliders = document.querySelectorAll('.place-slider');
+
+placeSliders.forEach(function (sliderElement) {
+  const slider = new Swiper(sliderElement, {
+    loop: true,
+    navigation: {
+      nextEl: sliderElement.querySelector('.place-button-next'),
+      prevEl: sliderElement.querySelector('.place-button-prev'),
+    },
+    pagination: {
+      el: sliderElement.querySelector('.place-pagination'),
+      clickable: true,
+    },
+  });
+
+  // Вызываем функцию toggleNavigationArrows после инициализации слайдера
+  toggleNavigationArrows(slider);
+
+  function toggleNavigationArrows(slider) {
+    var slidesCount = slider.slides.length;
+    var nextArrow = slider.navigation.nextEl;
+    var prevArrow = slider.navigation.prevEl;
+
+    if (slidesCount <= 1) {
+      nextArrow.style.display = 'none';
+      prevArrow.style.display = 'none';
+    } else {
+      nextArrow.style.display = 'flex';
+      prevArrow.style.display = 'flex';
+    }
+  }
 });
 
-// Вызов функции при смене слайдов
-placeSlider.on('slideChange', function() {
-  toggleNavigationArrows();
-});
 
-const placeSlider2 = new Swiper('.place2-slider', {
-  loop:true,
-  navigation: {
-    nextEl: '.place-button-next',
-    prevEl: '.place-button-prev',
-    clickable:true
-  },
-  pagination: {
-    el: '.place-pagination',
-    clickable: true,
-  },
-})
-
-
-const placeSlider3 = new Swiper('.place3-slider', {
-  loop:true,
-  navigation: {
-    nextEl: '.place-button-next',
-    prevEl: '.place-button-prev',
-  },
-  pagination: {
-    el: '.place-pagination',
-    clickable: true,
-  },
-})
 
 const similarProjects = new Swiper('.similar-projects', {
   slidesPerView: 3,
